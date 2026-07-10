@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>28-Point Self-Audit — Case File 02 — Fahad Hamza</title>
+<meta name="description" content="A 28-point technical audit of my own Google Business Profile in Lahore, scored across six ranking categories — built to stress-test the audit framework.">
+<link rel="canonical" href="https://portfolio-deci.vercel.app/case-self-audit.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="28-Point Self-Audit — Case File 02 — Fahad Hamza">
+<meta property="og:description" content="A 28-point technical audit of my own Google Business Profile in Lahore, scored across six ranking categories — built to stress-test the audit framework.">
+<meta property="og:url" content="https://portfolio-deci.vercel.app/case-self-audit.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="28-Point Self-Audit — Case File 02 — Fahad Hamza">
+<meta name="twitter:description" content="A 28-point technical audit of my own Google Business Profile in Lahore, scored across six ranking categories — built to stress-test the audit framework.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://portfolio-deci.vercel.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Case Files", "item": "https://portfolio-deci.vercel.app/#work"},
+    {"@type": "ListItem", "position": 3, "name": "28-Point Self-Audit", "item": "https://portfolio-deci.vercel.app/case-self-audit.html"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#e7dfc9;
+    --paper-light:#f3eedd;
+    --paper-dark:#ded3b3;
+    --ink:#211d16;
+    --ink-soft:#5a5240;
+    --ink-faint:#8c8368;
+    --stamp-red:#b23b2e;
+    --stamp-green:#4b6b4e;
+    --line:rgba(33,29,22,0.18);
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono:'IBM Plex Mono', 'Courier New', monospace;
+    --max:1180px;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:16px;line-height:1.5;position:relative;overflow-x:hidden;
+  }
+  body::before{
+    content:'';position:fixed;inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity:0.045;mix-blend-mode:multiply;pointer-events:none;z-index:999;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 40px;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-0.01em;}
+
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;
+    color:var(--stamp-red);display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:'';width:16px;height:1px;background:var(--stamp-red);display:inline-block;}
+
+  /* ---------- NAV ---------- */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(231,223,201,0.86);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+  .nav__inner{display:flex;align-items:center;justify-content:space-between;padding:22px 40px;max-width:var(--max);margin:0 auto;}
+  .nav__mark{font-family:var(--serif);font-size:20px;font-weight:700;}
+  .nav__mark span{color:var(--stamp-red);}
+  .nav__links{display:flex;gap:36px;font-size:14px;font-weight:500;}
+  .nav__links a{position:relative;padding-bottom:2px;}
+  .nav__links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--ink);transition:width .3s ease;}
+  .nav__links a:hover::after{width:100%;}
+
+  .btn{
+    font-family:var(--mono);font-size:13px;letter-spacing:0.04em;
+    padding:13px 24px;border:1px solid var(--ink);border-radius:2px;
+    transition:background .25s ease,color .25s ease;display:inline-block;
+  }
+  .btn:hover{background:var(--ink);color:var(--paper-light);}
+
+  /* ---------- BRIEF (case detail) ---------- */
+  .brief{padding:70px 0 100px;}
+  .brief__crumb{font-family:var(--mono);font-size:12px;color:var(--ink-faint);margin-bottom:34px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .brief__crumb a{color:var(--ink-soft);}
+  .brief__crumb a:hover{color:var(--stamp-red);}
+  .brief__head{padding-bottom:40px;border-bottom:1px solid var(--line);margin-bottom:50px;}
+  .brief__head h1{font-size:clamp(32px,4.4vw,48px);margin-top:14px;max-width:760px;line-height:1.1;}
+  .brief__sub{margin-top:18px;font-size:17px;color:var(--ink-soft);max-width:640px;line-height:1.6;}
+  .brief__tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
+  .brief__tag{font-family:var(--mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-soft);border:1px solid var(--line);padding:6px 12px;background:var(--paper-light);}
+
+  .brief__body{max-width:680px;}
+  .brief__block{margin-bottom:44px;}
+  .brief__block:last-child{margin-bottom:0;}
+  .brief__block h2{font-size:22px;margin-bottom:14px;}
+  .brief__block p{font-size:15.5px;color:var(--ink-soft);line-height:1.8;}
+  .brief__block ul{margin-top:8px;}
+  .brief__block li{font-size:14.5px;color:var(--ink-soft);line-height:1.9;padding-left:20px;position:relative;}
+  .brief__block li::before{content:'';position:absolute;left:0;top:11px;width:5px;height:5px;background:var(--stamp-red);border-radius:50%;}
+
+  .brief__nav{display:flex;justify-content:space-between;gap:20px;margin-top:70px;padding-top:30px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;flex-wrap:wrap;}
+  .brief__nav a{display:flex;flex-direction:column;gap:6px;}
+  .brief__nav a span:first-child{color:var(--ink-faint);letter-spacing:0.08em;text-transform:uppercase;font-size:11px;}
+  .brief__nav a span:last-child{color:var(--ink);font-family:var(--serif);font-size:16px;}
+  .brief__nav a:hover span:last-child{color:var(--stamp-red);}
+  .brief__nav a:last-child{text-align:right;align-items:flex-end;}
+
+  .foot{padding:26px 0 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+    font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);border-top:1px solid var(--line);}
+  .foot__social{display:flex;gap:18px;}
+  .foot__social a{transition:color .2s ease;}
+  .foot__social a:hover{color:var(--stamp-red);}
+
+  @media (max-width:920px){
+    .wrap{padding:0 24px;}
+    .nav__inner{padding:18px 24px;}
+    .nav__links{gap:20px;font-size:13px;}
+    .brief__nav{flex-direction:column;}
+    .brief__nav a:last-child{text-align:left;align-items:flex-start;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:0.01ms !important;animation-delay:0s !important;transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__mark" href="index.html">FH<span>.</span></a>
+    <div class="nav__links">
+      <a href="index.html#work">Case Files</a>
+      <a href="index.html#method">Method</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="brief wrap">
+  <div class="brief__crumb">
+    <a href="index.html">Home</a><span>/</span><a href="index.html#work">Case Files</a><span>/</span><span>28-Point Self-Audit</span>
+  </div>
+
+  <div class="brief__head">
+    <div class="eyebrow">Case file — 02 · Opened</div>
+    <h1>28-Point Self-Audit</h1>
+    <p class="brief__sub">Before running this audit framework on client accounts, I ran it on myself first.</p>
+    <div class="brief__tags">
+      <span class="brief__tag">Technical SEO Audit</span>
+      <span class="brief__tag">GBP Optimization</span>
+      <span class="brief__tag">Local Ranking Factors</span>
+      <span class="brief__tag">Lahore, PK</span>
+    </div>
+  </div>
+
+  <div class="brief__body">
+    <div class="brief__block">
+      <h2>The Brief</h2>
+      <p>Before running an audit framework on client accounts, I ran it on my own Business Profile in Lahore first. This case file is a line-by-line technical audit built as a checkpoint list — 28 individual points, rolled up into six broader ranking categories — used to catch weak spots in the methodology itself before it touches real client work.</p>
+    </div>
+
+    <div class="brief__block">
+      <h2>The Six Ranking Categories</h2>
+      <ul>
+        <li>Profile completeness &amp; categories — business info, attributes, services, and description accuracy.</li>
+        <li>NAP &amp; citation consistency — name, address, and phone matching across the web.</li>
+        <li>Reviews &amp; reputation signals — volume, recency, response rate, and sentiment.</li>
+        <li>Photos, posts &amp; engagement — how active and visually complete the profile is.</li>
+        <li>Local Pack competitiveness — how the profile stacks up against nearby competitors for target terms.</li>
+        <li>Technical &amp; backend health — duplicate listings, suspension risk, and structured data.</li>
+      </ul>
+    </div>
+
+    <div class="brief__block">
+      <h2>Why It Mattered</h2>
+      <p>Scoring each of the 28 checkpoints against my own profile surfaced blind spots in the audit framework itself — questions that were ambiguous, checks that were redundant, and a few that were missing entirely. That refined framework is what now gets used on client GBP audits, including the Westminster Dental Arts Group case file.</p>
+    </div>
+  </div>
+
+  <div class="brief__nav">
+    <a href="case-westminster-dental-arts.html"><span>Prev Case</span><span>&larr; Westminster Dental Arts</span></a>
+    <a href="case-airshowcase.html"><span>Next Case</span><span>AirShowcase &rarr;</span></a>
+  </div>
+</main>
+
+<div class="foot wrap">
+  <span>Fahad Hamza — Local SEO</span>
+  <div class="foot__social">
+    <a href="https://github.com/DAHAF-F" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/fahad--hamza/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://www.upwork.com/freelancers/~0149811f40c771a50b" target="_blank" rel="noopener noreferrer">Upwork</a>
+  </div>
+  <span>Based in Lahore, PK</span>
+</div>
+
+</body>
+</html>
